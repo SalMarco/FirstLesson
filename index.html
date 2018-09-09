@@ -11972,7 +11972,21 @@ It handles well different kind of data:</p>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Why-choose-R-or-Python?">Why choose R or Python?<a class="anchor-link" href="#Why-choose-R-or-Python?">&#182;</a></h2><p>As we will see there isn't a right or wrong, nut usually:</p>
+<ul>
+<li><strong>R:</strong> is better for data mining ad exploration </li>
+<li><strong>Python:</strong> is better for the production, complex analysis and performance</li>
+</ul>
+
+</div>
+</div>
+</div><aside class="notes">
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
@@ -11986,7 +12000,8 @@ It handles well different kind of data:</p>
 </div>
 </div>
 
-</div></section><section>
+</div>
+</aside></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
@@ -12278,7 +12293,7 @@ type of v_int &lt;class &#39;int&#39;&gt; 1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Structures">Structures<a class="anchor-link" href="#Structures">&#182;</a></h2><p>Let's consider data structure in PYthon:</p>
+<h2 id="Structures">Structures<a class="anchor-link" href="#Structures">&#182;</a></h2><p>Let's consider data structure in Python:</p>
 <ul>
 <li>list </li>
 <li>tuple</li>
@@ -12732,12 +12747,12 @@ They retains the most important proprities of dictionaries.</p>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Let&#39;s create a long list</span>
 <span class="n">longList</span><span class="o">=</span><span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100000</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Len of longList: </span><span class="si">%i</span><span class="s1">&#39;</span><span class="o">%</span><span class="k">len</span>(longList))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Len of longList: </span><span class="si">%i</span><span class="s1">&#39;</span><span class="o">%</span><span class="k">len</span>(longList),&#39;type of longList&#39;,type(longList))
 <span class="c1">#In python range returns element up to end-1</span>
 <span class="c1">#This is equivalent to</span>
 <span class="n">longList2</span><span class="o">=</span><span class="p">[]</span>
@@ -12747,10 +12762,54 @@ They retains the most important proprities of dictionaries.</p>
 <span class="c1">#Let&#39;s create a long set</span>
 <span class="n">longSet</span><span class="o">=</span><span class="p">{</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100000</span><span class="p">)}</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Len on longSet: </span><span class="si">%i</span><span class="s1">&#39;</span><span class="o">%</span><span class="k">len</span>(longSet),&#39;type of longSet&#39;,type(longSet))
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Let&#39;s compare the execution time of a search in longSet and longList&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Len of longList: 99999 type of longList &lt;class &#39;list&#39;&gt;
+Len of longList2: 99999
+Len on longSet: 99999 type of longSet &lt;class &#39;set&#39;&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's compare the execution time of a search in longSet and longList</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Search for 500 in longList&#39;</span><span class="p">)</span>
 <span class="o">%</span><span class="k">timeit</span> -n 100 500 in longList
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Search for 500 in longSet&#39;</span><span class="p">)</span>
 <span class="o">%</span><span class="k">timeit</span> -n 100 500 in longSet
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Search for 99999 in longList&#39;</span><span class="p">)</span>
 <span class="o">%</span><span class="k">timeit</span> -n 100 99999 in longList
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Search for 99999 in longSet&#39;</span><span class="p">)</span>
 <span class="o">%</span><span class="k">timeit</span> -n 100 99999 in longSet
 </pre></div>
 
@@ -12768,14 +12827,14 @@ They retains the most important proprities of dictionaries.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Len of longList: 99999
-Len of longList2: 99999
-Len on longSet: 99999 type of longSet &lt;class &#39;set&#39;&gt;
-Let&#39;s compare the execution time of a search in longSet and longList
-8.06 µs ± 1.46 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-60.8 ns ± 45 ns per loop (mean ± std. dev. of 7 runs, 100 loops each)
-878 µs ± 45 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-41.1 ns ± 3.39 ns per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<pre>Search for 500 in longList
+5.76 µs ± 1.43 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+Search for 500 in longSet
+75.3 ns ± 5.45 ns per loop (mean ± std. dev. of 7 runs, 100 loops each)
+Search for 99999 in longList
+904 µs ± 56 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+Search for 99999 in longSet
+40.2 ns ± 2.4 ns per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -12783,7 +12842,7 @@ Let&#39;s compare the execution time of a search in longSet and longList
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12796,18 +12855,16 @@ Let&#39;s compare the execution time of a search in longSet and longList
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#List are ordered structure, dictionary and set are not</span>
 <span class="n">listTest</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pippo&#39;</span><span class="p">,</span><span class="s1">&#39;pluto&#39;</span><span class="p">,</span><span class="s1">&#39;minni&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">setTest</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;pippo&#39;</span><span class="p">,</span><span class="s1">&#39;pluto&#39;</span><span class="p">,</span><span class="s1">&#39;minni&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;5 print for the list&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">listTest</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;5 print for the set&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">setTest</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Print for the list&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">listTest</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Print for the set&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">setTest</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12824,18 +12881,10 @@ Let&#39;s compare the execution time of a search in longSet and longList
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>5 print for the list
+<pre>Print for the list
 [&#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;, 1, 2, 3]
-[&#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;, 1, 2, 3]
-[&#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;, 1, 2, 3]
-[&#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;, 1, 2, 3]
-[&#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;, 1, 2, 3]
-5 print for the set
-{1, 2, 3, &#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;}
-{1, 2, 3, &#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;}
-{1, 2, 3, &#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;}
-{1, 2, 3, &#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;}
-{1, 2, 3, &#39;pippo&#39;, &#39;pluto&#39;, &#39;minni&#39;}
+Print for the set
+{1, 2, 3, &#39;pluto&#39;, &#39;pippo&#39;, &#39;minni&#39;}
 </pre>
 </div>
 </div>
