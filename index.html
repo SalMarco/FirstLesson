@@ -16,7 +16,7 @@
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/league.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -12153,7 +12153,7 @@ The product is  610000.0 the sum  330.5
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">v_int</span><span class="o">=</span><span class="mi">1</span>
@@ -12203,48 +12203,14 @@ type of v_bool &lt;class &#39;bool&#39;&gt;
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">v_float</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">v_float</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type of v_float&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">v_float</span><span class="p">),</span><span class="n">v_float</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">v_int</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">v_int</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type of v_int&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">v_float</span><span class="p">),</span><span class="n">v_float</span><span class="p">)</span>
 <span class="n">v_bool</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">v_bool</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type of v_bool&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">v_bool</span><span class="p">),</span><span class="n">v_bool</span><span class="p">)</span>
-<span class="n">v_float</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">v_int</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type of v_float&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">v_float</span><span class="p">),</span><span class="n">v_float</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>type of v_float &lt;class &#39;str&#39;&gt; 1.0
-type of v_bool &lt;class &#39;str&#39;&gt; False
-type of v_float &lt;class &#39;int&#39;&gt; 1
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">v_int</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">v_int</span><span class="p">)</span>
+<span class="n">v_int</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">v_int</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type of v_int&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">v_int</span><span class="p">),</span><span class="n">v_int</span><span class="p">)</span>
 </pre></div>
 
@@ -12262,7 +12228,44 @@ type of v_float &lt;class &#39;int&#39;&gt; 1
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>type of v_int &lt;class &#39;float&#39;&gt; 1.0
+<pre>type of v_int &lt;class &#39;str&#39;&gt; 1.0
+type of v_bool &lt;class &#39;str&#39;&gt; False
+type of v_int &lt;class &#39;float&#39;&gt; 1.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">v_int</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;15.5&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type of v_int&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">v_int</span><span class="p">),</span><span class="n">v_int</span><span class="p">)</span>
+<span class="n">v_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type of v_int&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">v_int</span><span class="p">),</span><span class="n">v_int</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>type of v_int &lt;class &#39;float&#39;&gt; 15.5
+type of v_int &lt;class &#39;int&#39;&gt; 1
 </pre>
 </div>
 </div>
@@ -12275,17 +12278,34 @@ type of v_float &lt;class &#39;int&#39;&gt; 1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Structures">Structures<a class="anchor-link" href="#Structures">&#182;</a></h2><p>Let's consider data structure in PYthon: list, tuple, set and dictionary</p>
-<h3 id="List">List<a class="anchor-link" href="#List">&#182;</a></h3>
+<h2 id="Structures">Structures<a class="anchor-link" href="#Structures">&#182;</a></h2><p>Let's consider data structure in PYthon:</p>
+<ul>
+<li>list </li>
+<li>tuple</li>
+<li>set</li>
+<li>dictionary</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="List">List<a class="anchor-link" href="#List">&#182;</a></h3><p>List in Python are sequence of objects.</p>
+<p>They are more similar to the sequence create with <code>c()</code> in R than <code>list()</code>, which are much more matrix.</p>
+
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#List</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">1</span>
 <span class="n">b</span><span class="o">=</span><span class="mi">2</span>
 <span class="n">c</span><span class="o">=</span><span class="mi">3</span>
 <span class="n">l1</span><span class="o">=</span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">]</span>
@@ -12321,7 +12341,7 @@ Lenght of the list 3
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -12335,7 +12355,7 @@ Lenght of the list 3
 </div>
 </div>
 
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12345,7 +12365,7 @@ The 3rd elemt in the list is accessible with 2, 3 is not present</p>
 
 </div>
 </div>
-</div></div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
@@ -12383,7 +12403,7 @@ The 3rd elemt in the list is accessible with 2, 3 is not present</p>
 </div>
 </div>
 
-</div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12392,23 +12412,27 @@ The 3rd elemt in the list is accessible with 2, 3 is not present</p>
 
 </div>
 </div>
-</div></div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
-<span class="n">l1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l1_2</span><span class="o">=</span><span class="n">l1</span>
+<span class="n">l2_2</span><span class="o">=</span><span class="n">l2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l1_2</span><span class="p">)</span>
+<span class="n">l1_2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
-<span class="n">l1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
+<span class="n">l1_2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l1_2</span><span class="p">)</span>
 <span class="c1"># Append l2 at the end of l1</span>
-<span class="n">l1</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
+<span class="n">l1_2</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">l2_2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l1_2</span><span class="p">)</span>
 <span class="n">l3</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">l3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
+<span class="n">l3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l2_2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">l3</span><span class="p">)</span>
+<span class="c1">#.copy()</span>
+<span class="c1">#print</span>
 </pre></div>
 
 </div>
@@ -12426,10 +12450,11 @@ The 3rd elemt in the list is accessible with 2, 3 is not present</p>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[1, 2, 3]
-[1, 2, 3, 20]
+[1, 2, 3]
 [10, 2, 3, 20]
 [10, 2, 3, 20, 4, 5, 6]
 [1, 2, 3, [4, 5, 6]]
+&lt;class &#39;list&#39;&gt;
 </pre>
 </div>
 </div>
@@ -12437,7 +12462,7 @@ The 3rd elemt in the list is accessible with 2, 3 is not present</p>
 </div>
 </div>
 
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
